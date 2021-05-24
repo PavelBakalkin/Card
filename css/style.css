@@ -227,13 +227,16 @@ body {
 .cards{
     width: 18rem;
     margin-left: auto;
-    margin-right: auto
-}
-
-.card-body{
+    margin-right: auto;
     background: linear-gradient(217deg, rgba(255, 166, 0, 0.753), rgba(255,0,0,0) 70.71%),
     linear-gradient(127deg, rgb(255, 251, 0), rgba(0,255,0,0) 70.71%),
     linear-gradient(336deg, rgb(255, 174, 0), rgba(0,0,255,0) 70.71%);
+}
+
+.card-body{
+    /* background: linear-gradient(217deg, rgba(255, 166, 0, 0.753), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgb(255, 251, 0), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgb(255, 174, 0), rgba(0,0,255,0) 70.71%); */
 }
 
 .card-title{
@@ -260,7 +263,49 @@ body {
 @media (max-width: 765px) {
     .cards{
         width: 100%;
-    }
+    }  
+}
+
+@media (max-width: 565px) {
+    .card-photo{
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }    
 }
 /* cards */
 /* content */
+
+/* footer */
+.main-wrapper__footer{
+
+}
+
+.footer{
+
+}
+
+.social-images:hover .social-image:not(:hover){
+    filter: blur(2px) grayscale(1);
+}
+
+.social-image{
+    width: 30px;
+}
+
+.social-image:hover{
+    transform: scale(1.2);
+}
+
+@media (max-width: 765px) {
+    .social-image{
+        margin: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .visa{
+        margin-top: 17px;
+    }
+}
+/* footer */

@@ -1,0 +1,256 @@
+body {
+    background: linear-gradient(217deg, rgba(255, 0, 0, 0.753), rgba(255,0,0,0) 70.71%),
+        linear-gradient(127deg, rgb(225, 0, 255), rgba(0,255,0,0) 70.71%),
+        linear-gradient(336deg, rgb(132, 0, 255), rgba(0,0,255,0) 70.71%);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
+}
+
+/* creating header, content and footer */
+.main-wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-wrapper__header{
+
+}
+
+.main-wrapper__content{
+    flex: 1 1 auto;
+}
+
+.main-wrapper__footer{
+    padding-top: 50px;
+    flex-shrink: 0;
+}
+/* creating header and footer */
+
+/* canvas */
+.canva1{
+    position: fixed;
+    z-index: 2;
+    top: 10%;
+    right: 5%;
+    width: 22%;
+    opacity: .45;
+}
+
+.canva2{
+    position: fixed;
+    z-index: 2;
+    bottom: 5%;
+    right: 0%;
+    width: 14%;
+    opacity: .45;
+}
+
+.canva3{
+    position: fixed;
+    z-index: 1;
+    bottom: 11%;
+    left: 28%;
+    width: 7%;
+    opacity: .45;
+}
+/* canvas */
+
+/* header */
+.navbar-brand__header{
+    font-size: 45px;
+}
+
+.nav-link__header{
+    font-size: 25px;
+    padding-top: 16px;
+}
+
+.button__header{
+    font-size: 20px;
+}
+
+@media (max-width: 438px) {
+    .navbar-brand__header{
+        font-size: 25px;
+    }
+}
+/* header */
+
+/* content */
+.content{
+
+}
+
+/* table */
+.main-line{
+    font-size: 80px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    color: rgb(0, 0, 0);
+}
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    line-height: 2.2;
+}
+  /* Zebra striping */
+tr:nth-of-type(odd) { 
+    background: rgba(4, 128, 0, 0); 
+}
+th { 
+    background: rgba(51, 51, 51, 0); 
+    color: #dc3545; 
+    font-weight: bold; 
+}
+
+td{
+    color: #000000;
+}
+
+td, th { 
+    padding: 6px; 
+    /* border: 3px solid rgb(204, 204, 204);  */
+    text-align: left; 
+    font-size: 20px;
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid rgba(0, 0, 0, 0.541); }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.616); 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	/*
+	Label the data
+	*/
+    td:nth-of-type(1):before { content: "10$ in hour"; }
+    td:nth-of-type(2):before { content: "18-27$ in hour"; }
+    td:nth-of-type(3):before { content: "35-45$ in hour"; }
+}
+
+@media (max-width: 1200px) {
+    .main-line{
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .main-line{
+        text-align: center;
+    }
+}
+
+@media (max-width: 780px) {
+    .main-line{
+        font-size: 65px;
+    }
+}
+
+@media (max-width: 578px) {
+    .main-line{
+        font-size: 45px;
+    }
+}
+/* table */
+
+/*offers */
+.offers{
+    background-color: rgba(0, 0, 255, 0.274);
+    margin: 50px 0px;
+    padding: 6px;
+}
+
+.makeup{
+}
+
+.caption{
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    padding: 6px;
+}
+
+.mini-description{
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 6px;
+}
+
+.price{
+    color: black;
+    font-size: 35px;
+    font-weight: 400;
+    padding: 6px;
+}
+/*offers */
+/* content */
+
+/* footer */
+.main-wrapper__footer{
+
+}
+
+.footer{
+
+}
+
+.social-images:hover .social-image:not(:hover){
+    filter: blur(2px) grayscale(1);
+}
+
+.social-image{
+    width: 30px;
+}
+
+.social-image:hover{
+    transform: scale(1.2);
+}
+
+@media (max-width: 765px) {
+    .social-image{
+        margin: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .visa{
+        margin-top: 17px;
+    }
+}
+/* footer */

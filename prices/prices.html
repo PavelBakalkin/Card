@@ -11,22 +11,25 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- My CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/resetStyles.css">
+    <link rel="stylesheet" href="prices-style.css">
+    <link rel="stylesheet" href="../css/resetStyles.css">
 
-    <script src="js/code.js"></script>
+    <script src="prices-code.js"></script>
     <title>Hello, world!</title>
 </head>
 
 <body>
     <div class="main-wrapper">
+        <canvas id="big" class="canva1" width = "300" height="300"></canvas>
+        <canvas id="average" class="canva2" width = "200" height="250"></canvas>
+        <canvas id="small" class="canva3" width = "100" height="150"></canvas>
         <div class="main-wrapper__header">
             <div class="container header">
                 <div class="row">
                     <div class="col-12">
                         <div class="">
                             <nav class="navbar navbar-expand-lg navbar-light shadow p-4 mb-5">
-                                <a class="navbar-brand navbar-brand__header h1" href="#">ArtKDev</a>
+                                <a class="navbar-brand navbar-brand__header h1" href="../index.html">ArtKDev</a>
                                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                     aria-expanded="false" aria-label="Toggle navigation">
@@ -65,101 +68,62 @@
         <div class="main-wrapper__content">
             <div class="container content">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-lg-6">
-                        <div class="main-page-discription">
-                            <div class="container description">
-                                <div class="row description__row">
-                                    <div class="col description__col">
-                                        <p class="description__text">Web <span
-                                                class="description__changedtxt">development</span></p>
-                                    </div>
-                                </div>
-                                <div class="row description__row">
-                                    <div class="col description__col">
-                                        <button onclick="goToPrices()" class="btn btn-danger description__orderbtn">Order service</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-lg-6 text-center">
-                        <div class="animation">
-                            <img src="images/Group.svg" class="svg-animation" alt="star" />
+                    <div class="col">
+                        <div class="main-line">
+                            <p>Price of work</p>
                         </div>
                     </div>
                 </div>
-                <div class="row achievements-block">
-                    <div class="col-xs-12 col-sm-6 col-lg-3">
-                        <div class="row">
-                            <div class="col">
-                                <p class="number">0+</p>
-                            </div>
-                            <div class="col">
-                                <p class="achievements">yaers on the market</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-xs-12 col-sm-6 col-lg-3">
-                        <div class="row">
-                            <div class="col">
-                                <p class="number">4+</p>
-                            </div>
-                            <div class="col">
-                                <p class="achievements">specialists in 1 room</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-lg-3">
-                        <div class="row">
-                            <div class="col">
-                                <p class="number">1000+</p>
-                            </div>
-                            <div class="col">
-                                <p class="achievements">completed projects</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-lg-3">
-                        <div class="row">
-                            <div class="col">
-                                <p class="number">125+ </p>
-                            </div>
-                            <div class="col">
-                                <p class="achievements">satisfied customers</p>
-                            </div>
-                        </div>
+                <div class="row">
+                    <div class="col">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Price</th>
+                                    <th>10$<br>in hour</th>
+                                    <th>18-27$<br>in hour</th>
+                                    <th>35-45$<br>in hour</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Commercial experience:</th>
+                                    <td>junior developer</td>
+                                    <td>developer</td>
+                                    <td>senior developer / architector</td>
+                                </tr>
+                                <tr>
+                                    <th>Project difficulty:</th>
+                                    <td>Simple</td>
+                                    <td>Middle</td>
+                                    <td>individual decision</td>
+                                </tr>
+                                <tr>
+                                    <th>Requires monitoring of work performed:</th>
+                                    <td>to 4h.</td>
+                                    <td>to 8 h.</td>
+                                    <td>according to sprint</td>
+                                </tr>
+                                <tr>
+                                    <th>Scope of the task:</th>
+                                    <td>to 40 h.</td>
+                                    <td>to 80 h.</td>
+                                    <td>according to the sprint</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-                <div class="row cards-block">
-                    <div class="col-sm-12 col-md-6 col-lg-4">
-                        <div class="card cards">
-                            <div class="card-body">
-                                <h5 class="card-title card-title">Outstaff</h5>
-                                <p class="card-text my-card-text">Expand your team with the help of our specialists.</p>
-                                <button href="#" class="btn card-button">Order</button>
-                            </div>
-                            <img src="images/144_f2.png" class="card-photo" alt="...">
+                <div class="row offers">
+                    <div class="col-8">
+                        <div class="makeup">
+                            <p class="caption">HTML/CSS</p>
+                            <p class="mini-description">layout layouts for Bitrix, OpenCart, WordPress, ModX and individual solutions</p>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4">
-                        <div class="card cards">
-                            <div class="card-body">
-                                <h5 class="card-title card-title">Outsourcing</h5>
-                                <p class="card-text my-card-text">Realization management from your side.</p>
-                                <button href="#" class="btn card-button">Order</button>
-                            </div>
-                            <img src="images/143.png" class="card-photo" alt="...">
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-12 col-lg-4">
-                        <div class="card cards">
-                            <div class="card-body">
-                                <h5 class="card-title card-title">Turnkey solution</h5>
-                                <p class="card-text my-card-text">Express your idea, follow the process - get the result
-                                </p>
-                                <button href="#" class="btn card-button">Order</button>
-                            </div>
-                            <img src="images/Venusaur.png" class="card-photo" alt="...">
+                    <div class="col-4">
+                        <div class="price">
+                            <p>from 10$ to 25$</p>
                         </div>
                     </div>
                 </div>
@@ -171,37 +135,37 @@
                     <div class="col-6">
                         <div class="row">
                             <div class="col-6 col-md-2 text-center">
-                                <a href="https://www.freepik.com"><img class="social-image" src="images/instagram.svg"
+                                <a href="https://www.freepik.com"><img class="social-image"
+                                        src="../images/instagram.svg" alt=""></a>
+                            </div>
+                            <div class="col-6 col-md-2 text-center">
+                                <a href="https://www.freepik.com"><img class="social-image" src="../images/telegram.svg"
                                         alt=""></a>
                             </div>
                             <div class="col-6 col-md-2 text-center">
-                                <a href="https://www.freepik.com"><img class="social-image" src="images/telegram.svg"
-                                        alt=""></a>
-                            </div>
-                            <div class="col-6 col-md-2 text-center">
-                                <a href="https://www.freepik.com"><img class="social-image" src="images/gmail.svg"
+                                <a href="https://www.freepik.com"><img class="social-image" src="../images/gmail.svg"
                                         alt=""></a>
                             </div>
                             <div class="col-6 col-md-2 text-center">
                                 <a href="https://www.flaticon.com/authors/dave-gandy"><img class="social-image"
-                                        src="images/facebook.svg" alt=""></a>
+                                        src="../images/facebook.svg" alt=""></a>
                             </div>
                             <div class="col-12 col-md-2 text-center">
                                 <a href="https://www.flaticon.com/authors/pixel-perfect"><img class="social-image"
-                                        src="images/github-sign.svg" alt=""></a>
+                                        src="../images/github-sign.svg" alt=""></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="row">
                             <div class="col-6 col-md-4 text-center">
-                                <p><img class="social-image" src="images/logotype.svg" alt=""></p>
+                                <p><img class="social-image" src="../images/logotype.svg" alt=""></p>
                             </div>
                             <div class="col-6 col-md-4 text-center">
-                                <p><img class="social-image" src="images/paypal.svg" alt=""></p>
+                                <p><img class="social-image" src="../images/paypal.svg" alt=""></p>
                             </div>
                             <div class="col-12 col-md-4 text-center">
-                                <p><img class="social-image visa" src="images/visa.svg" alt=""></p>
+                                <p><img class="social-image visa" src="../images/visa.svg" alt=""></p>
                             </div>
                         </div>
                     </div>
@@ -209,7 +173,6 @@
             </div>
         </div>
     </div>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
