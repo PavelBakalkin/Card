@@ -1,0 +1,147 @@
+<svg width="298" height="285" viewBox="0 0 383 391" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path id="path2" d="M78.8536 128.107L180.484 150.146L236.239 57.3533L243.295 163.767L344.926 185.805L247.656 229.534L254.711 335.947L187.54 256.559L90.27 300.287L146.025 207.495L78.8536 128.107Z" fill="transparent"/>
+<path id="path3" d="M140.777 330.649L152.072 227.272L53.9595 181.521L159.052 163.381L170.347 60.0035L224.003 152.17L329.096 134.029L257.164 209.131L310.821 301.297L212.708 255.547L140.777 330.649Z" fill="transparent"/>
+<path id="path4" d="M61.6139 231.127L150.972 177.934L128.465 72.0446L206.199 145.058L295.557 91.8647L254.241 190.183L331.975 263.197L228.706 250.948L187.39 349.266L164.882 243.377L61.6139 231.127Z" fill="transparent"/>
+<path id="path5" d="M58.5488 205.23L156.104 169.212L153.271 60.9938L216.397 146.951L313.953 110.932L255.412 200.075L318.538 286.032L219.231 255.169L160.69 344.312L157.856 236.094L58.5488 205.23Z" fill="transparent"/>
+<path id="path6" d="M100.237 100.737L193.517 146.708L270.065 70.1603L251.167 175.12L344.447 221.09L239.488 239.988L220.59 344.947L174.62 251.667L69.6603 270.565L146.208 194.017L100.237 100.737Z" fill="transparent"/>
+
+<circle r="20" fill="purple"> 
+    <animateMotion dur="20s" repeatCount="indefinite">
+        <mpath xlink:href="#path"/>
+    </animateMotion>
+</circle>
+
+<circle r="12" fill="purple"> 
+    <animateMotion dur="27s" repeatCount="indefinite">
+        <mpath xlink:href="#path2"/>
+    </animateMotion>
+</circle>
+
+<circle r="30" fill="purple"> 
+    <animateMotion dur="34s" repeatCount="indefinite">
+        <mpath xlink:href="#path2"/>
+    </animateMotion>
+</circle>
+
+<circle r="32" fill="purple"> 
+    <animateMotion dur="36s" repeatCount="indefinite">
+        <mpath xlink:href="#path"/>
+    </animateMotion>
+</circle>
+
+<circle r="24" fill="purple"> 
+    <animateMotion dur="14s" repeatCount="indefinite">
+        <mpath xlink:href="#path3"/>
+    </animateMotion>
+</circle>
+
+<circle r="5" fill="purple"> 
+    <animateMotion dur="18s" repeatCount="indefinite">
+        <mpath xlink:href="#path4"/>
+    </animateMotion>
+</circle>
+
+<circle r="18" fill="purple"> 
+    <animateMotion dur="20s" repeatCount="indefinite">
+        <mpath xlink:href="#path5"/>
+    </animateMotion>
+</circle>
+
+<circle r="10" fill="purple"> 
+    <animateMotion dur="16s" repeatCount="indefinite">
+        <mpath xlink:href="#path2"/>
+    </animateMotion>
+</circle>
+
+<circle r="11" fill="purple"> 
+    <animateMotion dur="16s" repeatCount="indefinite">
+        <mpath xlink:href="#path4"/>
+    </animateMotion>
+</circle>
+
+<circle r="10" fill="purple"> 
+    <animateMotion dur="14s" repeatCount="indefinite">
+        <mpath xlink:href="#path3"/>
+    </animateMotion>
+</circle>
+
+<circle r="13" fill="purple"> 
+    <animateMotion dur="12s" repeatCount="indefinite">
+        <mpath xlink:href="#path6"/>
+    </animateMotion>
+</circle>
+
+<circle r="16" fill="purple"> 
+    <animateMotion dur="10s" repeatCount="indefinite">
+        <mpath xlink:href="#path"/>
+    </animateMotion>
+</circle>
+
+
+<circle r="13" fill="purple"> 
+    <animateMotion dur="16s" repeatCount="indefinite">
+        <mpath xlink:href="#path"/>
+    </animateMotion>
+</circle>
+
+<circle r="10" fill="purple"> 
+    <animateMotion dur="14s" repeatCount="indefinite">
+        <mpath xlink:href="#path4"/>
+    </animateMotion>
+</circle>
+
+<circle r="17" fill="purple"> 
+    <animateMotion dur="6s" repeatCount="indefinite">
+        <mpath xlink:href="#path5"/>
+    </animateMotion>
+</circle>
+
+<circle r="18" fill="purple"> 
+    <animateMotion dur="8s" repeatCount="indefinite">
+        <mpath xlink:href="#path6"/>
+    </animateMotion>
+</circle>
+
+<circle r="10" fill="purple"> 
+    <animateMotion dur="9s" repeatCount="indefinite">
+        <mpath xlink:href="#path6"/>
+    </animateMotion>
+</circle>
+
+<circle r="10" fill="red"> 
+    <animateMotion dur="6s" repeatCount="indefinite">
+        <mpath xlink:href="#path6"/>
+    </animateMotion>
+</circle>
+
+<circle r="5" fill="red"> 
+    <animateMotion dur="9s" repeatCount="indefinite">
+        <mpath xlink:href="#path3"/>
+    </animateMotion>
+</circle>
+
+<circle r="7" fill="red"> 
+    <animateMotion dur="7s" repeatCount="indefinite">
+        <mpath xlink:href="#path5"/>
+    </animateMotion>
+</circle>
+
+
+<path id="path" d="M203.487 59.0217L235.216 158.056L343.454 159.945L254.826 219.262L286.555 318.296L200.05 255.922L111.421 315.239L146.587 217.373L60.0827 154.999L168.321 156.888L203.487 59.0217Z" fill="transparent">
+    <animate
+        attributeName="d"
+        dur="18s"
+        repeatCount="indefinite"
+        values="
+            M78.8536 128.107L180.484 150.146L236.239 57.3533L243.295 163.767L344.926 185.805L247.656 229.534L254.711 335.947L187.54 256.559L90.27 300.287L146.025 207.495L78.8536 128.107Z;
+            M140.777 330.649L152.072 227.272L53.9595 181.521L159.052 163.381L170.347 60.0035L224.003 152.17L329.096 134.029L257.164 209.131L310.821 301.297L212.708 255.547L140.777 330.649Z;
+            M61.6139 231.127L150.972 177.934L128.465 72.0446L206.199 145.058L295.557 91.8647L254.241 190.183L331.975 263.197L228.706 250.948L187.39 349.266L164.882 243.377L61.6139 231.127Z;
+            M58.5488 205.23L156.104 169.212L153.271 60.9938L216.397 146.951L313.953 110.932L255.412 200.075L318.538 286.032L219.231 255.169L160.69 344.312L157.856 236.094L58.5488 205.23Z;
+            M100.237 100.737L193.517 146.708L270.065 70.1603L251.167 175.12L344.447 221.09L239.488 239.988L220.59 344.947L174.62 251.667L69.6603 270.565L146.208 194.017L100.237 100.737Z;
+            M203.487 59.0217L235.216 158.056L343.454 159.945L254.826 219.262L286.555 318.296L200.05 255.922L111.421 315.239L146.587 217.373L60.0827 154.999L168.321 156.888L203.487 59.0217Z;
+        "
+    />
+
+</path>
+
+</svg>

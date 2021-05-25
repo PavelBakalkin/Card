@@ -72,6 +72,17 @@ body {
     font-size: 20px;
 }
 
+.drop-down-list{
+    background: linear-gradient(217deg, rgba(255, 0, 0, 0.753), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgb(225, 0, 255), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgb(132, 0, 255), rgba(0,0,255,0) 70.71%);
+}
+
+.dropdown-item:hover{
+    font-weight: 900;
+    background-color: rgba(255, 0, 0, 0);
+}
+
 @media (max-width: 438px) {
     .navbar-brand__header{
         font-size: 25px;
@@ -134,12 +145,15 @@ only screen and (max-width: 760px),
 		left: -9999px;
 	}
 	
-	tr { border: 1px solid rgba(0, 0, 0, 0.541); }
+	tr { 
+        border: 2px solid rgba(0, 0, 0, 0.541); 
+        border-radius: 15px;
+    }
 	
 	td { 
 		/* Behave  like a "row" */
 		border: none;
-		border-bottom: 1px solid rgba(0, 0, 0, 0.616); 
+		/* border-bottom: 1px solid rgba(0, 0, 0, 0.616);  */
 		position: relative;
 		padding-left: 50%; 
 	}
@@ -191,15 +205,16 @@ only screen and (max-width: 760px),
 /*offers */
 .offers{
     background-color: rgba(0, 0, 255, 0.274);
-    margin: 50px 0px;
+    margin: 40px 0px;
     padding: 6px;
+    border-radius: 15px;
 }
 
 .makeup{
 }
 
 .caption{
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
     color: black;
     padding: 6px;
@@ -209,16 +224,141 @@ only screen and (max-width: 760px),
     color: black;
     font-size: 15px;
     font-weight: 400;
-    padding: 6px;
+    padding: 12px 6px 0;
+    margin-bottom: 2px;
 }
 
 .price{
     color: black;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 400;
     padding: 6px;
+    text-align: center;
+}
+
+.line{
+    border: none; /* Убираем границу */
+    background-color: rgb(10, 10, 10); /* Цвет линии */
+    color: rgb(0, 0, 0); /* Цвет линии для IE6-7 */
+    height: 2px; /* Толщина линии */
+    margin: 0;
+}
+
+@media (max-width: 575px) {
+    .caption{
+        font-size: 25px;
+    }
+    .price{
+        font-size: 25px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 455px) {
+    .caption{
+        font-size: 20px;
+    }
+    .price{
+        font-size: 20px;
+    }
 }
 /*offers */
+
+/* The cost of creating sites based on turnkey solutions */
+.turnkey-solutions{
+    margin-top: 40px;
+    font-size: 30px;
+    color: black;
+    font-weight: 700;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color:rgba(0, 0, 255, 0.274);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.7s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: rgba(204, 204, 204, 0.678);
+}
+
+ /* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: rgba(255, 255, 255, 0.404);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.opened-cost-of-creating-sites{
+    padding-top: 18px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.opened-cost-of-creating-sites__caption{
+
+}
+
+.opened-cost-of-creating-sites__time{
+
+}
+
+.opened-cost-of-creating-sites__price{
+
+}
+
+.cost-of-creating-sites-description{
+    padding-top: 10px;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.types-of-work-text{
+    font-size: 12px;
+    font-weight: 600;
+    padding-top: 12px;
+}
+
+@media (max-width: 520px) {
+    .turnkey-solutions{
+        font-size: 22px;
+    }
+
+    .opened-cost-of-creating-sites{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 290px) {
+    .accordion {
+        font-size: 14px;
+    }
+}
+/* The cost of creating sites based on turnkey solutions */
 /* content */
 
 /* footer */

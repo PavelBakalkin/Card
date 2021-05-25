@@ -20,9 +20,9 @@
 
 <body>
     <div class="main-wrapper">
-        <canvas id="big" class="canva1" width = "300" height="300"></canvas>
-        <canvas id="average" class="canva2" width = "200" height="250"></canvas>
-        <canvas id="small" class="canva3" width = "100" height="150"></canvas>
+        <canvas id="big" class="canva1" width="300" height="300"></canvas>
+        <canvas id="average" class="canva2" width="200" height="250"></canvas>
+        <canvas id="small" class="canva3" width="100" height="150"></canvas>
         <div class="main-wrapper__header">
             <div class="container header">
                 <div class="row">
@@ -37,7 +37,7 @@
                                 </button>
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav mr-auto">
-                                        <li class="nav-item active">
+                                        <li class="nav-item">
                                             <a class="nav-link nav-link__header" href="#">Nothing <span
                                                     class="sr-only">(current)</span></a>
                                         </li>
@@ -50,8 +50,8 @@
                                                 aria-haspopup="true" aria-expanded="false">
                                                 Language
                                             </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item" href="#">Ru</a>
+                                            <div class="dropdown-menu drop-down-list" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item" href="#">RU</a>
                                                 <a class="dropdown-item" href="#">EN</a>
                                                 <a class="dropdown-item" href="#">HEB</a>
                                             </div>
@@ -66,7 +66,7 @@
             </div>
         </div>
         <div class="main-wrapper__content">
-            <div class="container content">
+            <div id="content" class="container content">
                 <div class="row">
                     <div class="col">
                         <div class="main-line">
@@ -114,16 +114,229 @@
                         </table>
                     </div>
                 </div>
-                <div class="row offers">
-                    <div class="col-8">
-                        <div class="makeup">
-                            <p class="caption">HTML/CSS</p>
-                            <p class="mini-description">layout layouts for Bitrix, OpenCart, WordPress, ModX and individual solutions</p>
+                <script>
+                    createOffers("HTML/CSS", "10$ - 25$", "layout layouts for Bitrix, OpenCart, WordPress, ModX and individual solutions");
+                    createOffers("Design", "10$ - 25$", "UI/UX, Web");
+                    createOffers("FrontEnd", "18$ - 45$", "on React");
+                    createOffers("BackEnd", "10$ - 25$", "PHP (Bitrix Framework / Laravel / Zend), Python (Django / Flask)");
+                </script>
+                <div class="row">
+                    <div class="col">
+                        <div class="turnkey-solutions">
+                            <p>The cost of creating sites based on turnkey solutions:</p>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <div class="price">
-                            <p>from 10$ to 25$</p>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <button class="accordion">LandingPage</button>
+                                <div class="panel">
+                                    <div class="row opened-cost-of-creating-sites">
+                                        <div class="col-12 col-lg-6">
+                                            <p class="opened-cost-of-creating-sites__caption">
+                                                Based on the finished template. Examples of our ready-made templates on
+                                                Envato
+                                                Market: dZENcode: Themes
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-lg-3">
+                                            <p class="opened-cost-of-creating-sites__time">
+                                                from 1 working day
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-lg-3">
+                                            <p class="opened-cost-of-creating-sites__price">
+                                                from $149
+                                            </p>
+                                        </div>
+                                        <div class="col">
+                                            <hr class="line">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <p class="cost-of-creating-sites-description">
+                                                Sending mail through the Bitrix24 CRM form or through the contact form
+                                                on
+                                                the
+                                                site
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <button class="accordion">Online store</button>
+                                <div class="panel">
+                                    <div class="row opened-cost-of-creating-sites">
+                                        <div class="col-12 col-lg-6">
+                                            <p class="opened-cost-of-creating-sites__caption">
+                                                Based on a ready-made template from MarketPlace.
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-lg-3">
+                                            <p class="opened-cost-of-creating-sites__time">
+                                                from 5 working days
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-lg-3">
+                                            <p class="opened-cost-of-creating-sites__price">
+                                                from $349
+                                            </p>
+                                        </div>
+                                        <div class="col">
+                                            <hr class="line">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <p class="cost-of-creating-sites-description">
+                                                Small Business - Online Store
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <button class="accordion">Online store "Business class""</button>
+                                <div class="panel">
+                                    <div class="row opened-cost-of-creating-sites">
+                                        <div class="col-12 col-lg-6">
+                                            <p class="opened-cost-of-creating-sites__caption">
+                                                Based on a ready-made template from MarketPlace.
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-lg-3">
+                                            <p class="opened-cost-of-creating-sites__time">
+                                                from 5 working days
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-lg-3">
+                                            <p class="opened-cost-of-creating-sites__price">
+                                                from $449
+                                            </p>
+                                        </div>
+                                        <div class="col">
+                                            <hr class="line">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <p class="cost-of-creating-sites-description">
+                                                Business - eCommerce
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="turnkey-solutions">
+                            <p>Landing Page</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <button class="accordion">Landing Page</button>
+                                <div class="panel">
+                                    <div class="row opened-cost-of-creating-sites">
+                                        <div class="col-12 col-lg-6">
+                                            <p class="opened-cost-of-creating-sites__caption">
+                                                ( 1 page, 8 blocks)
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-lg-3">
+                                            <p class="opened-cost-of-creating-sites__time">
+                                                from 11 working days
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-lg-3">
+                                            <p class="opened-cost-of-creating-sites__price">
+                                                from $850
+                                            </p>
+                                        </div>
+                                        <div class="col">
+                                            <hr class="line">
+                                        </div>
+                                    </div>
+                                    <div id="landingPage" class="row">
+                                        <script>
+                                            createListOfWork("landingPage", "Type of work", "The terms", "Price");
+                                        </script>
+                                        <div class="col-12">
+                                            <hr class="line">
+                                        </div>
+                                        <script>
+                                            createListOfWork("landingPage", "Design", "14 h.", "200$");
+                                            createListOfWork("landingPage", "PSD to HTML coding", "14 h.", "200$");
+                                            createListOfWork("landingPage", "Integration with CMS", "40 h.", "450$");
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="turnkey-solutions">
+                            <p>Online store</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <button class="accordion">Online store</button>
+                                <div class="panel">
+                                    <div class="row opened-cost-of-creating-sites">
+                                        <div class="col-12 col-lg-6">
+                                            <p class="opened-cost-of-creating-sites__caption">
+                                                ( 10 pages, 48 blocks)
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-lg-3">
+                                            <p class="opened-cost-of-creating-sites__time">
+                                                from 41 working day
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-lg-3">
+                                            <p class="opened-cost-of-creating-sites__price">
+                                                from $2850
+                                            </p>
+                                        </div>
+                                        <div class="col">
+                                            <hr class="line">
+                                        </div>
+                                    </div>
+                                    <div id="onlineStore" class="row">
+                                        <script>
+                                            createListOfWork("onlineStore", "Type of work", "The terms", "Price");
+                                        </script>
+                                        <div class="col-12">
+                                            <hr class="line">
+                                        </div>
+                                        <script>
+                                            createListOfWork("onlineStore", "Design", "180 h.", "850$");
+                                            createListOfWork("onlineStore", "PSD to HTML coding", "140 h.", "500$");
+                                            createListOfWork("onlineStore", "Integration with CMS", "740 h.", "1550$");
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -175,6 +388,9 @@
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+        acardionMove()
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

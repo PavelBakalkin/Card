@@ -43,6 +43,21 @@ body {
     font-size: 20px;
 }
 
+.dropdown-item:focus{
+    color: rgb(55, 43, 226);
+}
+
+.drop-down-list{
+    background: linear-gradient(217deg, rgba(255, 0, 0, 0.753), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgb(225, 0, 255), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgb(132, 0, 255), rgba(0,0,255,0) 70.71%);
+}
+
+.dropdown-item:hover{
+    font-weight: 900;
+    background-color: rgba(255, 0, 0, 0);
+}
+
 @media (max-width: 438px) {
     .navbar-brand__header{
         font-size: 25px;
