@@ -13,6 +13,7 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="prices-style.css">
     <link rel="stylesheet" href="../css/resetStyles.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
 
     <script src="prices-code.js"></script>
     <title>Hello, world!</title>
@@ -24,6 +25,44 @@
         <canvas id="average" class="canva2" width="200" height="250"></canvas>
         <canvas id="small" class="canva3" width="100" height="150"></canvas>
         <div class="main-wrapper__header">
+            <div class="container header">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="">
+                            <nav class="navbar navbar-light shadow p-4 mb-5">
+                                <a class="navbar-brand navbar-brand__header h1" href="../index.html">ArtKDev</a>
+                                <ul class="navbar-nav navbar-nav-my ml-auto language-selection">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle nav-link__header" href="#"
+                                            id="navbarDropdown" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            EN
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-my drop-down-list"
+                                            aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="#">RU</a>
+                                            <a class="dropdown-item" href="#">EN</a>
+                                            <a class="dropdown-item" href="#">HEB</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                                <div id="myNav" class="overlay">
+                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                    <div class="overlay-content">
+                                        <a href="#">About</a>
+                                        <a href="#">Services</a>
+                                        <a href="#">Clients</a>
+                                        <a href="#">Contact</a>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="main-wrapper__header">
             <div class="container header">
                 <div class="row">
                     <div class="col-12">
@@ -64,7 +103,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="main-wrapper__content">
             <div id="content" class="container content">
                 <div class="row">
@@ -80,9 +119,9 @@
                             <thead>
                                 <tr>
                                     <th>Price</th>
-                                    <th>10$<br>in hour</th>
-                                    <th>18-27$<br>in hour</th>
-                                    <th>35-45$<br>in hour</th>
+                                    <th>10$<br>per hour</th>
+                                    <th>18-27$<br>per hour</th>
+                                    <th>35-45$<br>per hour</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -100,7 +139,7 @@
                                 </tr>
                                 <tr>
                                     <th>Requires monitoring of work performed:</th>
-                                    <td>to 4h.</td>
+                                    <td>to 4 h.</td>
                                     <td>to 8 h.</td>
                                     <td>according to sprint</td>
                                 </tr>
@@ -108,7 +147,7 @@
                                     <th>Scope of the task:</th>
                                     <td>to 40 h.</td>
                                     <td>to 80 h.</td>
-                                    <td>according to the sprint</td>
+                                    <td>according to sprint</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -389,7 +428,9 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script>
-        acardionMove()
+        acardionMove();
+        openNav();
+        closeNav();
     </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

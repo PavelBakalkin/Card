@@ -58,38 +58,6 @@ body {
 }
 /* canvas */
 
-/* header */
-.navbar-brand__header{
-    font-size: 45px;
-}
-
-.nav-link__header{
-    font-size: 25px;
-    padding-top: 16px;
-}
-
-.button__header{
-    font-size: 20px;
-}
-
-.drop-down-list{
-    background: linear-gradient(217deg, rgba(255, 0, 0, 0.753), rgba(255,0,0,0) 70.71%),
-    linear-gradient(127deg, rgb(225, 0, 255), rgba(0,255,0,0) 70.71%),
-    linear-gradient(336deg, rgb(132, 0, 255), rgba(0,0,255,0) 70.71%);
-}
-
-.dropdown-item:hover{
-    font-weight: 900;
-    background-color: rgba(255, 0, 0, 0);
-}
-
-@media (max-width: 438px) {
-    .navbar-brand__header{
-        font-size: 25px;
-    }
-}
-/* header */
-
 /* content */
 .content{
 
@@ -360,37 +328,3 @@ only screen and (max-width: 760px),
 }
 /* The cost of creating sites based on turnkey solutions */
 /* content */
-
-/* footer */
-.main-wrapper__footer{
-
-}
-
-.footer{
-
-}
-
-.social-images:hover .social-image:not(:hover){
-    filter: blur(2px) grayscale(1);
-}
-
-.social-image{
-    width: 30px;
-}
-
-.social-image:hover{
-    transform: scale(1.2);
-}
-
-@media (max-width: 765px) {
-    .social-image{
-        margin: 30px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .visa{
-        margin-top: 17px;
-    }
-}
-/* footer */

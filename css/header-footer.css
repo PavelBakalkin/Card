@@ -1,0 +1,137 @@
+/* header */
+.navbar-brand__header{
+    font-size: 45px;
+}
+
+.navbar-nav-my .dropdown-menu-my {
+    position: absolute;
+}
+
+.nav-link__header{
+    font-size: 25px;
+    padding-top: 16px;
+}
+
+.burger-items{
+    text-align: right;
+}
+
+.language-selection{
+    padding-right: 17px;
+}
+
+.button__header{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.drop-down-list{
+    background: linear-gradient(217deg, rgba(255, 0, 0, 0.753), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgb(225, 0, 255), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgb(132, 0, 255), rgba(0,0,255,0) 70.71%);
+}
+
+.dropdown-item:hover{
+    font-weight: 900;
+    background-color: rgba(255, 0, 0, 0);
+}
+
+/* The Overlay (background) */
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: linear-gradient(217deg, rgba(255, 166, 0, 0.753), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgb(255, 251, 0), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgb(255, 174, 0), rgba(0,0,255,0) 70.71%);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    /* text-decoration: none; */
+    font-size: 36px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 9px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media (max-width: 462px) {
+    .navbar-brand__header{
+        font-size: 25px;
+    }
+
+    .nav-link__header{
+        font-size: 13px;
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 25px;
+    }
+}
+/* header */
+
+
+/* footer */
+.main-wrapper__footer{
+
+}
+
+.footer{
+
+}
+
+.social-images:hover .social-image:not(:hover){
+    filter: blur(2px) grayscale(1);
+}
+
+.social-image{
+    width: 30px;
+}
+
+.social-image:hover{
+    transform: scale(1.2);
+}
+
+@media (max-width: 765px) {
+    .social-image{
+        margin: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .visa{
+        margin-top: 17px;
+    }
+}
+/* footer */
