@@ -14,12 +14,56 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/resetStyles.css">
     <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/chat.css">
 
     <script src="js/code.js"></script>
     <title>Hello, world!</title>
 </head>
 
 <body>
+    <img class="chat" src="images/chat.svg" data-toggle="modal" data-target="#exampleModal" alt="chat">
+
+    <!-- modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Feedback</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Full name</label>
+                            <input type="text" class="form-control" placeholder="enter your full name"
+                                id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Number</label>
+                            <input type="tel" class="form-control" required placeholder="enter your number"
+                                pattern="^\d[\d\(\)\-]{4,14}\d$" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="email" class="form-control" required
+                                pattern="^[\w\d_]{4,16}@(mail|hotmail|gmail)\.[a-z]{2,3}$"
+                                placeholder="enter your email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Comment</label>
+                            <input type="text" class="form-control" placeholder="comment up" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <button type="reset" class="btn btn-secondary">Reset</button>
+                        <button type="submit" class="btn btn-warning">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal -->
 
     <div class="main-wrapper">
         <div class="main-wrapper__header">
