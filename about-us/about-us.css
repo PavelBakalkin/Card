@@ -1,0 +1,127 @@
+body {
+    background: linear-gradient(217deg, rgba(255, 0, 0, 0.753), rgba(255,0,0,0) 70.71%),
+        linear-gradient(127deg, rgb(225, 0, 255), rgba(0,255,0,0) 70.71%),
+        linear-gradient(336deg, rgb(132, 0, 255), rgba(0,0,255,0) 70.71%);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
+}
+
+/* creating header, content and footer */
+.main-wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-wrapper__header{
+
+}
+
+.main-wrapper__content{
+    flex: 1 1 auto;
+}
+
+.main-wrapper__footer{
+    padding-top: 50px;
+    flex-shrink: 0;
+}
+/* creating header and footer */
+
+/* content */
+/* main description */
+.flow-around{
+    float:left; /* Выравнивание по левому краю */
+    margin: 7px 12px 7px 0; /* Отступы вокруг картинки */
+}
+
+.about-us-block{
+    border: 10px solid #dc3546b4;
+    border-radius: 15px;
+}
+
+.about-us-txt{
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+.about-us-btn{
+    position: absolute;
+    bottom: 10px;
+    font-size: 18px;
+    width: 20%;
+}
+
+.social-image-about-us{
+    width: 140px;
+}
+
+@media (max-width: 1000px) {
+    .about-us-txt{
+        font-size: 15px;
+    }
+    
+    .about-us-btn{
+        font-size: 17px;
+        width: 30%;
+    }
+}
+
+@media (max-width: 370px) {
+    .about-us-txt{
+        padding-top: 4px;
+        font-size: 14px;
+    }
+
+    .about-us-btn{
+        margin-bottom: 10px;
+        font-size: 15px;
+        width: 40%;
+    }
+
+    .social-image-about-us{
+        width: 100px;
+    }
+}
+
+@media (max-width: 340px) {
+    .about-us-btn{
+        bottom: -3px;
+    }
+}
+/* main description */
+
+/* contacts */
+.footer-text{
+    margin-bottom: 30px;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footer-text p{
+    padding-top: 10px;
+}
+
+.line{
+    position: relative;
+    bottom: 20px;
+    border: none; /* Убираем границу */
+    background-color: rgb(10, 10, 10); /* Цвет линии */
+    color: rgb(0, 0, 0); /* Цвет линии для IE6-7 */
+    height: 2px; /* Толщина линии */
+    margin: 0;
+    width: 100%;
+}
+
+@media (max-width: 540px) {
+    .footer-text{
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+/* contacts */
+/* content */

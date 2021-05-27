@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="about-us.css">
+    <link rel="stylesheet" href="../css/chat.css">
+    <link rel="stylesheet" href="../css/resetStyles.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
+
+    <script src="about-us.js"></script>
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <img class="chat" src="../images/chat.svg" data-toggle="modal" data-target="#exampleModal" alt="chat">
+
+    <!-- modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Feedback</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Full name</label>
+                            <input type="text" class="form-control" placeholder="enter your full name"
+                                id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Number</label>
+                            <input type="tel" class="form-control" required placeholder="enter your number"
+                                pattern="^\d[\d\(\)\-]{4,14}\d$" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="email" class="form-control" required
+                                pattern="^[\w\d_]{4,16}@(mail|hotmail|gmail)\.[a-z]{2,3}$"
+                                placeholder="enter your email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Comment</label>
+                            <input type="text" class="form-control" placeholder="comment up" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <button type="reset" class="btn btn-secondary">Reset</button>
+                        <button type="submit" class="btn btn-secondary">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal -->
+
+    <div class="main-wrapper">
+        <div class="main-wrapper__header">
+            <div class="container header">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="">
+                            <nav class="navbar navbar-light shadow p-4 mb-5">
+                                <a class="navbar-brand navbar-brand__header h1" href="../index.html">ArtKDev</a>
+                                <ul class="navbar-nav navbar-nav-my ml-auto language-selection">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle nav-link__header" href="#"
+                                            id="navbarDropdown" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            EN
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-my drop-down-list"
+                                            aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="#">RU</a>
+                                            <a class="dropdown-item" href="#">EN</a>
+                                            <a class="dropdown-item" href="#">HEB</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                                <div id="myNav" class="overlay">
+                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                    <div class="overlay-content">
+                                        <a href="../prices/prices.html">Services</a>
+                                        <a href="../index.html">Main page</a>
+                                        <a href="about-us.html">About us</a>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-wrapper__content">
+            <div class="container content">
+                <div class="row mb-5">
+                    <div class="col-sm-12 col-md-6 about-us-block">
+                        <!-- <p class="about-us-txt"> -->
+                        <a href="https://github.com/"><img class="social-image-about-us flow-around"
+                                src="../images/github-sign.svg" alt="">
+                        </a>
+                        <p class="about-us-txt"> Here you can see our different projects with their source code and rate
+                            it</p>
+                        <a href="https://github.com/">
+                            <button type="button" class="btn btn-danger about-us-btn">Watch</button>
+                        </a>
+                        <!-- </p> -->
+                    </div>
+                </div>
+                <div class="row justify-content-center mb-5">
+                    <div class="col-sm-12 col-md-6 about-us-block">
+                        <a href="https://www.upwork.com/"><img class="social-image-about-us flow-around"
+                                src="../images/upwork-1.svg" alt="">
+                        </a>
+                        <p class="about-us-txt"> Here you can also watch our work examples and feedback from our customers</p>
+                        <a href="https://www.upwork.com/">
+                            <button type="button" class="btn btn-danger about-us-btn">Watch</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-sm-12 col-md-6 ml-auto about-us-block">
+                        <a href="https://uk-ua.facebook.com/"><img class="social-image-about-us flow-around"
+                                src="../images/facebook.svg" alt="">
+                        </a>
+                        <p class="about-us-txt"> Write us on our facebook</p>
+                        <a href="https://uk-ua.facebook.com/">
+                            <button type="button" class="btn btn-danger about-us-btn">Watch</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-wrapper__footer">
+            <div class="container footer mt-3">
+                <div class="row footer-text">
+                    <div class="col-sm-12 col-md-6 text-center">
+                        <p>
+                            Odessa
+                        </p>
+                        <p>
+                            Zabolotnogo<br>
+                        </p>
+                        <p>
+                            +380938816867
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-6   text-center">
+                        <p>
+                            Email
+                        </p>
+                        
+                        <p>
+                            lordprettypim@gmail.com
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <hr class="line">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        openNav();
+        closeNav();
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
