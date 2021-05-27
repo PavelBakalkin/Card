@@ -43,9 +43,9 @@ window.onload = () => {
 }
 
 const createOffers = (caption, price, miniDescription) => {
-    const content = document.querySelector('#content');
+    const priceTable = document.querySelector('#price-table');
 
-    content.insertAdjacentHTML('beforeend', `
+    priceTable.insertAdjacentHTML('afterend', `
     <div class="row">
         <div class="col">
             <div class="offers">

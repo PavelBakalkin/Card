@@ -168,6 +168,12 @@ only screen and (max-width: 760px),
         font-size: 45px;
     }
 }
+
+@media (max-width: 378px) {
+    td, th { 
+        font-size: 17px;
+    }
+}
 /* table */
 
 /*offers */
@@ -235,6 +241,7 @@ only screen and (max-width: 760px),
 /* The cost of creating sites based on turnkey solutions */
 .turnkey-solutions{
     margin-top: 40px;
+    margin-bottom: 10px;
     font-size: 30px;
     color: black;
     font-weight: 700;

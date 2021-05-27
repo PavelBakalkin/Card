@@ -11,6 +11,18 @@
 .chat:hover{
     width: 70px;
 }
+
+@media (max-width: 800px) {
+    .chat{
+        position: fixed;
+        z-index: 3;
+        bottom: 10%;
+        right: 4%;
+        width: 50px;
+        transition-duration: .5s;
+    }
+    
+}
 /* chat icon */
 
 /* modal */
@@ -41,25 +53,3 @@ form:invalid button {
     background-color: rgb(68, 65, 62);
     pointer-events: none;
 }
-
-/* input:focus:required:invalid {
-    border: 3px solid red;
-}
-input:required:valid {
-    border: 3px solid rgb(21, 255, 0);
-}
-
-input:invalid {
-    border: 3px solid red;
-} */
-
-/* input:invalid:required {
-    background-image: linear-gradient(217deg, rgba(255, 166, 0, 0.753), rgba(255,0,0,0) 70.71%),
-    linear-gradient(127deg, rgb(255, 251, 0), rgba(0,255,0,0) 70.71%),
-    linear-gradient(336deg, rgb(255, 174, 0), rgba(0,0,255,0) 70.71%);
-} */
-
-/* input:valid:required {
-    border: 3px solid rgb(21, 255, 0);
-} */
-/* modal */
