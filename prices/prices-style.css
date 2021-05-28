@@ -1,7 +1,8 @@
 body {
-    background: linear-gradient(217deg, rgba(255, 0, 0, 0.753), rgba(255,0,0,0) 70.71%),
+    /* background: linear-gradient(217deg, rgba(255, 0, 0, 0.753), rgba(255,0,0,0) 70.71%),
         linear-gradient(127deg, rgb(225, 0, 255), rgba(0,255,0,0) 70.71%),
-        linear-gradient(336deg, rgb(132, 0, 255), rgba(0,0,255,0) 70.71%);
+        linear-gradient(336deg, rgb(132, 0, 255), rgba(0,0,255,0) 70.71%); */
+    background: linear-gradient(to bottom, rgba(3,75, 82, 1) 0%, rgba(3,75, 82, 0) 100%);
     height: 100%;
     margin: 0;
     background-repeat: no-repeat;
@@ -82,7 +83,8 @@ tr:nth-of-type(odd) {
 }
 th { 
     background: rgba(51, 51, 51, 0); 
-    color: #dc3545; 
+    /* color: #dc3545;  */
+    color: #153283;
     font-weight: bold; 
 }
 

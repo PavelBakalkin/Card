@@ -1,11 +1,16 @@
 body {
-    background: linear-gradient(217deg, rgba(255, 0, 0, 0.753), rgba(255,0,0,0) 70.71%),
+    /* background: linear-gradient(217deg, rgba(255, 0, 0, 0.753), rgba(255,0,0,0) 70.71%),
         linear-gradient(127deg, rgb(225, 0, 255), rgba(0,255,0,0) 70.71%),
         linear-gradient(336deg, rgb(132, 0, 255), rgba(0,0,255,0) 70.71%);
     height: 100%;
     margin: 0;
     background-repeat: no-repeat;
-    background-attachment: fixed;   
+    background-attachment: fixed;    */
+    background: linear-gradient(to bottom, rgba(3,75, 82, 1) 0%, rgba(3,75, 82, 0) 100%);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* creating header, content and footer */
@@ -47,7 +52,8 @@ body {
 }
 
 .description__changedtxt{
-    color: #dc3545;
+    color: #274cb4;
+       /* color: #dc3545; */
     transition-duration: 2s;
 }
 
@@ -172,7 +178,8 @@ body {
 
 .achievements{
     font-size: 20px;
-    color: #dc3545;
+    color: #153283;
+    /* color: #dc3545; */
 }
 
 @media (max-width: 1200px) {
@@ -214,9 +221,16 @@ body {
     margin-left: auto;
     margin-right: auto;
     border: none;
-    background: linear-gradient(197deg, rgb(255, 123, 0), rgba(255,0,0,0) 80.71%),
+
+    background: linear-gradient(197deg, rgb(0, 162, 255), rgba(255,0,0,0) 80.71%),
+    linear-gradient(127deg, rgba(11, 66, 167, 0.247), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(0, 47, 255, 0), rgba(0,0,255,0) 70.71%);
+
+    /* background: linear-gradient(197deg, rgb(255, 123, 0), rgba(255,0,0,0) 80.71%),
     linear-gradient(127deg, rgba(255, 251, 0, 0), rgba(0,255,0,0) 70.71%),
-    linear-gradient(336deg, rgba(255, 174, 0, 0), rgba(0,0,255,0) 70.71%);
+    linear-gradient(336deg, rgba(255, 174, 0, 0), rgba(0,0,255,0) 70.71%); */
+
+
     /* background: linear-gradient(217deg, rgba(255, 166, 0, 0.753), rgba(255,0,0,0) 70.71%),
     linear-gradient(127deg, rgb(255, 251, 0), rgba(0,255,0,0) 70.71%),
     linear-gradient(336deg, rgb(255, 174, 0), rgba(0,0,255,0) 70.71%); */
@@ -273,31 +287,132 @@ body {
 } 
 
 .list-of-technologies{
-    background: linear-gradient(197deg, rgb(255, 123, 0), rgba(255,0,0,0) 80.71%),
+    background: linear-gradient(197deg, rgb(0, 162, 255), rgba(255,0,0,0) 80.71%),
+    linear-gradient(127deg, rgba(11, 66, 167, 0.247), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(0, 47, 255, 0), rgba(0,0,255,0) 70.71%);
+    /* background: linear-gradient(197deg, rgb(255, 123, 0), rgba(255,0,0,0) 80.71%),
     linear-gradient(127deg, rgba(255, 251, 0, 0), rgba(0,255,0,0) 70.71%),
-    linear-gradient(336deg, rgba(255, 174, 0, 0), rgba(0,0,255,0) 70.71%);
+    linear-gradient(336deg, rgba(255, 174, 0, 0), rgba(0,0,255,0) 70.71%); */
     width: 100%;
-    height: 350px;
+    height: 450px;
+}
+
+.list-of-technologies p{
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.list-of-technologies .icon{
+    display: inline-block;
+    height: 48px;
+    /* margin: 24px auto; */
+    content: "";
 }
 
 .technology-description{
     text-align: center;
 }
 
-.technology{
-    width: 50px;
-    margin-bottom: 10px;
+.icon{
+    max-width: 100%;
+    background: url("../images/technologies1.png") no-repeat;
 }
 
+.css-icon {
+    width: 34px;
+    background-position: 0 -432px;
+}
+
+.html-icon {
+    width: 34px;
+    background-position: 0 -1152px;
+}
+
+.js-icon {
+    width: 44px;
+    background-position: 0 -1296px;
+}
+
+.php-icon {
+    width: 74px;
+    background-position: 0 -2300px;
+}
+
+.laravel-icon {
+    width: 65px;
+    background-position: 0 -1440px;
+}
+
+.react-icon{
+    width: 53px;
+    background-position: 0 -3696px;
+}
+
+.c-sharp-icon{
+    width: 49px;
+    background-position: 0 -5039px;
+}
+
+.mvc-icon{
+    width:49px;
+    background-position: 0 -5136px;
+}
+
+/* .technologies {
+    font-size: 0;
+    padding-top: 95px;
+}
+
+.technologies-item {
+    max-width: 100%;
+    background: url("../images/technologies.png") no-repeat;
+}
+
+.technologies .technologies-item {
+    display: block;
+    height: 48px;
+    margin: 24px auto;
+    content: "";
+}
+.figma-icon {
+    width: 32px;
+    background-position: 0 -816px;
+}
+
+/* .technology{
+    width: 50px;
+    margin-bottom: 10px;
+} */
+
+/* .text-put-bottom {
+    height: 120px;
+}
+
+.text-put-bottom p {
+    position: absolute;
+    left: 47%;
+    bottom: 0%;
+/* transform: translate(-50%, 0); 
+} */
+
+@media (max-width: 750px) {
+    .list-of-technologies{
+        height: 550px;
+    }
+}
+
+@media (max-width: 500px) {
+    .list-of-technologies p{
+        font-size: 15px;
+    }
+}
 
 @media (max-width: 450px) {
     .technologies-txt{
         font-size: 40px;
     } 
-
-    .technology{
-        width: 40px;
-    }
 }
+
 /* technologies */
 /* content */

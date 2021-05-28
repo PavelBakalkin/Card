@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <link rel="shortcut icon" href="images/start.svg" class="fas fa-bible" type="image/x-icon">
+
     <!-- My CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/resetStyles.css">
@@ -17,7 +19,7 @@
     <link rel="stylesheet" href="css/chat.css">
 
     <!-- <script src="js/code.js"></script> -->
-    <title>Hello, world!</title>
+    <title>ArtKDev</title>
 </head>
 
 <body>
@@ -126,7 +128,7 @@
                                 <div class="row description__row">
                                     <div class="col description__col text-center">
                                         <button onclick="goToPrices()"
-                                            class="btn btn-danger description__orderbtn">Order service</button>
+                                            class="btn btn-primary description__orderbtn">Order service</button>
                                     </div>
                                 </div>
                             </div>
@@ -186,7 +188,7 @@
                             <div class="card-body">
                                 <h5 class="card-title card-title">Outstaff</h5>
                                 <p class="card-text my-card-text">Expand your team with the help of our specialists.</p>
-                                <button href="#" class="btn card-button">Order</button>
+                                <button href="#" data-toggle="modal" data-target="#exampleModal" class="btn card-button">Order</button>
                             </div>
                             <img src="images/144_f2.png" class="card-photo" alt="snorlax">
                         </div>
@@ -196,7 +198,7 @@
                             <div class="card-body">
                                 <h5 class="card-title card-title">Outsourcing</h5>
                                 <p class="card-text my-card-text">Realization management from your side.</p>
-                                <button href="#" class="btn card-button">Order</button>
+                                <button href="#" data-toggle="modal" data-target="#exampleModal" class="btn card-button">Order</button>
                             </div>
                             <img src="images/143.png" class="card-photo" alt="snorlax">
                         </div>
@@ -207,7 +209,7 @@
                                 <h5 class="card-title card-title">Turnkey solution</h5>
                                 <p class="card-text my-card-text">Express your idea, follow the process - get the result
                                 </p>
-                                <button href="#" class="btn card-button">Order</button>
+                                <button href="#" data-toggle="modal" data-target="#exampleModal" class="btn card-button">Order</button>
                             </div>
                             <img src="images/Venusaur.png" class="card-photo" alt="Venusaur">
                         </div>
@@ -217,52 +219,44 @@
                     <div class="row ">
                         <div class="col text-center">
                             <!-- <div> -->
-                                <h3 class="technologies-txt">We use</h3>
+                            <h3 class="technologies-txt">We use</h3>
                             <!-- </div> -->
                         </div>
                     </div>
-                    <div class="row pb-5">
-                        <div class="col-3 text-center">
-                                <a href="https://www.flaticon.com/authors/pixel-perfect"><img class="technology"
-                                    src="images/github-sign.svg" alt="Github"></a>
-                                <p>Github</p>
+                    <div class="row mb-md-5">
+                        <div class="col-6 col-md-3 text-center">
+                            <a href="https://www.flaticon.com/authors/pixel-perfect"><span class="icon css-icon"></span></a>
+                            <p>CSS</p>
                         </div>
-                        <div class="col-3 text-center">
-                            <a href="https://www.flaticon.com/authors/pixel-perfect"><img class="technology"
-                                src="images/github-sign.svg" alt="Github"></a>
-                            <p>Github</p>
+                        <div class="col-6 col-md-3 text-center">
+                            <a href="https://www.flaticon.com/authors/pixel-perfect"><span class="icon html-icon"></span></a>
+                            <p>HTML</p>
                         </div>
-                        <div class="col-3 text-center">
-                            <a href="https://www.flaticon.com/authors/pixel-perfect"><img class="technology"
-                                src="images/github-sign.svg" alt="Github"></a>
-                            <p>Github</p>
+                        <div class="col-6 col-md-3 text-center">
+                            <a href="https://www.flaticon.com/authors/pixel-perfect"><span class="icon js-icon"></span></a>
+                            <p>JavaScript</p>
                         </div>
-                        <div class="col-3 text-center">
-                            <a href="https://www.flaticon.com/authors/pixel-perfect"><img class="technology"
-                                src="images/github-sign.svg" alt="Github"></a>
-                            <p>Github</p>
+                        <div class="col-6 col-md-3 text-center">
+                            <a href="https://www.flaticon.com/authors/pixel-perfect"><span class="icon react-icon"></span></a>
+                            <p>React</p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-3 text-center">
-                                <a href="https://www.flaticon.com/authors/pixel-perfect"><img class="technology"
-                                    src="images/github-sign.svg" alt="Github"></a>
-                                <p>Github</p>
+                        <div class="col-6 col-md-3 text-center">
+                            <a href="https://www.flaticon.com/authors/pixel-perfect"></a><span class="icon php-icon"></span></a>
+                            <p>PHP</p>
                         </div>
-                        <div class="col-3 text-center">
-                            <a href="https://www.flaticon.com/authors/pixel-perfect"><img class="technology"
-                                src="images/github-sign.svg" alt="Github"></a>
-                            <p>Github</p>
+                        <div class="col-6 col-md-3 text-center">
+                            <a href="https://www.flaticon.com/authors/pixel-perfect"><span class="icon laravel-icon"></span></a>
+                            <p>Laravel</p>
                         </div>
-                        <div class="col-3 text-center">
-                            <a href="https://www.flaticon.com/authors/pixel-perfect"><img class="technology"
-                                src="images/github-sign.svg" alt="Github"></a>
-                            <p>Github</p>
+                        <div class="col-6 col-md-3 text-center">
+                            <a href="https://www.flaticon.com/authors/pixel-perfect"><span class="icon c-sharp-icon"></span></a>
+                            <p>C-sharp</p>
                         </div>
-                        <div class="col-3 text-center">
-                            <a href="https://www.flaticon.com/authors/pixel-perfect"><img class="technology"
-                                src="images/github-sign.svg" alt="Github"></a>
-                            <p>Github</p>
+                        <div class="col-6 col-md-3 text-center">
+                            <a href="https://www.flaticon.com/authors/pixel-perfect"><span class="icon mvc-icon" ></span></a>
+                            <p>.NET</p>
                         </div>
                     </div>
                 </div>
