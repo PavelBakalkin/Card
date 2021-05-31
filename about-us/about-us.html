@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../css/resetStyles.css">
     <link rel="stylesheet" href="../css/header-footer.css">
 
-    <!-- <script src="about-us.js"></script> -->
+    <script src="about-us.js"></script>
     <title>ArtKDev</title>
 </head>
 
@@ -29,7 +29,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Feedback</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Связь с нами</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -37,12 +37,12 @@
                 <div class="modal-body">
                     <form action="#">
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Full name</label>
+                            <label for="exampleInputEmail1">Полное имя</label>
                             <input type="text" class="form-control" placeholder="enter your full name"
                                 id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Number</label>
+                            <label for="exampleInputPassword1">Телефон</label>
                             <input type="tel" class="form-control" required placeholder="enter your number"
                                 pattern="^\d[\d\(\)\-]{4,14}\d$" id="exampleInputPassword1">
                         </div>
@@ -53,12 +53,12 @@
                                 placeholder="enter your email" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Comment</label>
+                            <label for="exampleInputEmail1">Сообщение</label>
                             <input type="text" class="form-control" placeholder="comment up" id="exampleInputEmail1"
                                 aria-describedby="emailHelp">
                         </div>
-                        <button type="reset" class="btn btn-secondary">Reset</button>
-                        <button type="submit" class="btn btn-secondary">Send</button>
+                        <button type="reset" class="btn btn-secondary">Сброс</button>
+                        <button type="submit" class="btn btn-secondary">Отправить</button>
                     </form>
                 </div>
             </div>
@@ -79,13 +79,13 @@
                                         <a class="nav-link dropdown-toggle nav-link__header" href="#"
                                             id="navbarDropdown" role="button" data-toggle="dropdown"
                                             aria-haspopup="true" aria-expanded="false">
-                                            EN
+                                            RU
                                         </a>
-                                        <div class="dropdown-menu dropdown-menu-my drop-down-list"
+                                        <div id="language" class="dropdown-menu dropdown-menu-my drop-down-list"
                                             aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="#">RU</a>
-                                            <a class="dropdown-item" href="#">EN</a>
-                                            <a class="dropdown-item" href="#">HEB</a>
+                                            <a class="dropdown-item" href="about-us.html">RU</a>
+                                            <a class="dropdown-item" href="../../en/about-us/about-us.html">EN</a>
+                                            <a class="dropdown-item" href="../../heb/about-us/about-us.html">HEB</a>
                                         </div>
                                     </li>
                                 </ul>
@@ -95,13 +95,13 @@
                                     <div class="overlay-content">
                                         <ul>
                                             <li>
-                                                <a href="../prices/prices.html">Services</a>
+                                                <a href="../prices/prices.html">Службы</a>
                                             </li>
                                             <li>
-                                                <a href="../index.html">Main page</a>
+                                                <a href="../index.html">Главная</a>
                                             </li>
                                             <li>
-                                                <a href="about-us.html">About us</a>
+                                                <a href="about-us.html">О нас</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -120,10 +120,9 @@
                         <a href="https://github.com/"><img class="social-image-about-us flow-around"
                                 src="../images/github-sign.svg" alt="">
                         </a>
-                        <p class="about-us-txt"> Here you can see our different projects with their source code and rate
-                            it</p>
+                        <p class="about-us-txt"> Здесь вы можете просмотреть выполненные проекты и оценить их</p>
                         <a href="https://github.com/">
-                            <button type="button" class="btn btn-primary about-us-btn">Watch</button>
+                            <button type="button" class="btn btn-primary about-us-btn">Смотреть</button>
                         </a>
                         <!-- </p> -->
                     </div>
@@ -133,9 +132,9 @@
                         <a href="https://www.upwork.com/"><img class="social-image-about-us flow-around"
                                 src="../images/upwork-1.svg" alt="">
                         </a>
-                        <p class="about-us-txt"> Here you can also watch our work examples and feedback from our customers</p>
+                        <p class="about-us-txt"> Здесь вы можете увидеть примеры наших работ и отзывы к ним</p>
                         <a href="https://www.upwork.com/">
-                            <button type="button" class="btn btn-primary about-us-btn">Watch</button>
+                            <button type="button" class="btn btn-primary about-us-btn">Смотреть</button>
                         </a>
                     </div>
                 </div>
@@ -144,9 +143,9 @@
                         <a href="https://uk-ua.facebook.com/"><img class="social-image-about-us flow-around"
                                 src="../images/facebook.svg" alt="">
                         </a>
-                        <p class="about-us-txt"> Write us on our facebook</p>
+                        <p class="about-us-txt"> Отпишите нам в Facebook</p>
                         <a href="https://uk-ua.facebook.com/">
-                            <button type="button" class="btn btn-primary about-us-btn">Watch</button>
+                            <button type="button" class="btn btn-primary about-us-btn">Смотреть</button>
                         </a>
                     </div>
                 </div>
@@ -157,22 +156,22 @@
                 <div class="row footer-text">
                     <div class="col-sm-12 col-md-6 text-center">
                         <p>
-                            Odessa
+                            Одесса
                         </p>
                         <p>
-                            Zabolotnogo<br>
+                            Заболотного<br>
                         </p>
                         <p>
-                            +380938816867
+                            +972547285882 (Telegram, WhatsApp)
                         </p>
                     </div>
                     <div class="col-sm-12 col-md-6   text-center">
                         <p>
                             Email
                         </p>
-                        
+
                         <p>
-                            lordprettypim@gmail.com
+                            artkdev2020@gmail.com
                         </p>
                     </div>
                 </div>
@@ -184,9 +183,9 @@
     </div>
 </body>
 
-<script src="about-us.js">
-    openNav();
-    closeNav();
+<script>
+    chooseLanguage();
+    checkLanguage();
 </script>
 
 <!-- Optional JavaScript -->

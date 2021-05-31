@@ -34,7 +34,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Feedback</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Связь с нами</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -42,12 +42,12 @@
                     <div class="modal-body">
                         <form action="#">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Full name</label>
+                                <label for="exampleInputEmail1">Полное имя</label>
                                 <input type="text" class="form-control" placeholder="enter your full name"
                                     id="exampleInputEmail1" aria-describedby="emailHelp">
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Number</label>
+                                <label for="exampleInputPassword1">Телефон</label>
                                 <input type="tel" class="form-control" required placeholder="enter your number"
                                     pattern="^\d[\d\(\)\-]{4,14}\d$" id="exampleInputPassword1">
                             </div>
@@ -58,12 +58,12 @@
                                     placeholder="enter your email" id="exampleInputEmail1" aria-describedby="emailHelp">
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Comment</label>
+                                <label for="exampleInputEmail1">Сообщение</label>
                                 <input type="text" class="form-control" placeholder="comment up" id="exampleInputEmail1"
                                     aria-describedby="emailHelp">
                             </div>
-                            <button type="reset" class="btn btn-secondary">Reset</button>
-                            <button type="submit" class="btn btn-secondary">Send</button>
+                            <button type="reset" class="btn btn-secondary">Сброс</button>
+                            <button type="submit" class="btn btn-secondary">Отправить</button>
                         </form>
                     </div>
                 </div>
@@ -83,13 +83,13 @@
                                         <a class="nav-link dropdown-toggle nav-link__header" href="#"
                                             id="navbarDropdown" role="button" data-toggle="dropdown"
                                             aria-haspopup="true" aria-expanded="false">
-                                            EN
+                                            RU
                                         </a>
-                                        <div class="dropdown-menu dropdown-menu-my drop-down-list"
+                                        <div id="language" class="dropdown-menu dropdown-menu-my drop-down-list"
                                             aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="#">RU</a>
-                                            <a class="dropdown-item" href="#">EN</a>
-                                            <a class="dropdown-item" href="#">HEB</a>
+                                            <a class="dropdown-item" href="prices.html">RU</a>
+                                            <a class="dropdown-item" href="../../en/prices/prices.html">EN</a>
+                                            <a class="dropdown-item" href="../../heb/prices/prices.html">HEB</a>
                                         </div>
                                     </li>
                                 </ul>
@@ -99,13 +99,13 @@
                                     <div class="overlay-content">
                                         <ul>
                                             <li>
-                                                <a href="prices.html">Services</a>
+                                                <a href="prices.html">Службы</a>
                                             </li>
                                             <li>
-                                                <a href="../index.html">Main page</a>
+                                                <a href="../index.html">Главная</a>
                                             </li>
                                             <li>
-                                                <a href="../about-us/about-us.html">About us</a>
+                                                <a href="../about-us/about-us.html">О нас</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -121,7 +121,7 @@
                 <div class="row">
                     <div class="col">
                         <div>
-                            <h2 class="main-line">Price of work</h2>
+                            <h2 class="main-line">Цена услуги</h2>
                         </div>
                     </div>
                 </div>
@@ -130,163 +130,39 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <th>Price</th>
-                                    <th>10$<br>per hour</th>
-                                    <th>18-27$<br>per hour</th>
-                                    <th>35-45$<br>per hour</th>
+                                    <th>Цена</th>
+                                    <th>10$<br>за час</th>
+                                    <th>18-27$<br>за час</th>
+                                    <th>35-45$<br>за час</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th>Commercial experience:</th>
+                                    <th>Комерческий опыт:</th>
                                     <td>junior developer</td>
                                     <td>developer</td>
                                     <td>senior developer / architector</td>
                                 </tr>
                                 <tr>
-                                    <th>Project difficulty:</th>
-                                    <td>Simple</td>
-                                    <td>Middle</td>
-                                    <td>individual decision</td>
+                                    <th>Сложность проекта:</th>
+                                    <td>Простой</td>
+                                    <td>Средний</td>
+                                    <td>Индивидуальное решение</td>
                                 </tr>
                                 <tr>
-                                    <th>Requires monitoring of work performed:</th>
-                                    <td>to 4 h.</td>
-                                    <td>to 8 h.</td>
-                                    <td>according to sprint</td>
+                                    <th>Требуется констроль выполнения работы:</th>
+                                    <td>до 4 ч.</td>
+                                    <td>до 8 ч.</td>
+                                    <td>согласно спринта</td>
                                 </tr>
                                 <tr>
-                                    <th>Scope of the task:</th>
-                                    <td>to 40 h.</td>
-                                    <td>to 80 h.</td>
-                                    <td>according to sprint</td>
+                                    <th>Объем выполняемой задачи:</th>
+                                    <td>до 40 ч.</td>
+                                    <td>до 80 ч.</td>
+                                    <td>согласно спринта</td>
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
-                </div>
-                <!-- <script>
-                    createOffers("HTML/CSS", "10$ - 25$", "layout layouts for Bitrix, OpenCart, WordPress, ModX and individual solutions");
-                    createOffers("Design", "10$ - 25$", "UI/UX, Web");
-                    createOffers("FrontEnd", "18$ - 45$", "on React");
-                    createOffers("BackEnd", "10$ - 25$", "PHP (Bitrix Framework / Laravel / Zend), Python (Django / Flask)");
-                </script> -->
-                <div class="row">
-                    <div class="col">
-                        <div class="turnkey-solutions">
-                            <h2 class="turnkey-solutions">The cost of creating sites based on turnkey solutions:</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="row">
-                            <div class="col">
-                                <button class="accordion">LandingPage</button>
-                                <div class="panel">
-                                    <div class="row opened-cost-of-creating-sites">
-                                        <div class="col-12 col-lg-6">
-                                            <p class="opened-cost-of-creating-sites__caption">
-                                                Based on the finished template. Examples of our ready-made templates on
-                                                Envato
-                                                Market: dZENcode: Themes
-                                            </p>
-                                        </div>
-                                        <div class="col-12 col-lg-3">
-                                            <p class="opened-cost-of-creating-sites__time">
-                                                from 1 working day
-                                            </p>
-                                        </div>
-                                        <div class="col-12 col-lg-3">
-                                            <p class="opened-cost-of-creating-sites__price">
-                                                from $149
-                                            </p>
-                                        </div>
-                                        <div class="col">
-                                            <hr class="line">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <p class="cost-of-creating-sites-description">
-                                                Sending mail through the Bitrix24 CRM form or through the contact form
-                                                on
-                                                the
-                                                site
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <button class="accordion">Online store</button>
-                                <div class="panel">
-                                    <div class="row opened-cost-of-creating-sites">
-                                        <div class="col-12 col-lg-6">
-                                            <p class="opened-cost-of-creating-sites__caption">
-                                                Based on a ready-made template from MarketPlace.
-                                            </p>
-                                        </div>
-                                        <div class="col-12 col-lg-3">
-                                            <p class="opened-cost-of-creating-sites__time">
-                                                from 5 working days
-                                            </p>
-                                        </div>
-                                        <div class="col-12 col-lg-3">
-                                            <p class="opened-cost-of-creating-sites__price">
-                                                from $349
-                                            </p>
-                                        </div>
-                                        <div class="col">
-                                            <hr class="line">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <p class="cost-of-creating-sites-description">
-                                                Small Business - Online Store
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <button class="accordion">Online store "Business class""</button>
-                                <div class="panel">
-                                    <div class="row opened-cost-of-creating-sites">
-                                        <div class="col-12 col-lg-6">
-                                            <p class="opened-cost-of-creating-sites__caption">
-                                                Based on a ready-made template from MarketPlace.
-                                            </p>
-                                        </div>
-                                        <div class="col-12 col-lg-3">
-                                            <p class="opened-cost-of-creating-sites__time">
-                                                from 5 working days
-                                            </p>
-                                        </div>
-                                        <div class="col-12 col-lg-3">
-                                            <p class="opened-cost-of-creating-sites__price">
-                                                from $449
-                                            </p>
-                                        </div>
-                                        <div class="col">
-                                            <hr class="line">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <p class="cost-of-creating-sites-description">
-                                                Business - eCommerce
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -305,17 +181,17 @@
                                     <div class="row opened-cost-of-creating-sites">
                                         <div class="col-12 col-lg-6">
                                             <p class="opened-cost-of-creating-sites__caption">
-                                                ( 1 page, 8 blocks)
+                                                ( 1 страница, 8 блоков)
                                             </p>
                                         </div>
                                         <div class="col-12 col-lg-3">
                                             <p class="opened-cost-of-creating-sites__time">
-                                                from 11 working days
+                                                от 11 рабочих дней
                                             </p>
                                         </div>
                                         <div class="col-12 col-lg-3">
                                             <p class="opened-cost-of-creating-sites__price">
-                                                from $850
+                                                от $850
                                             </p>
                                         </div>
                                         <div class="col">
@@ -323,17 +199,6 @@
                                         </div>
                                     </div>
                                     <div id="landingPage" class="row">
-                                        <!-- <script>
-                                            createListOfWork("landingPage", "Type of work", "The terms", "Price");
-                                        </script>
-                                        <div class="col-12">
-                                            <hr class="line">
-                                        </div>
-                                        <script>
-                                            createListOfWork("landingPage", "Design", "14 h.", "200$");
-                                            createListOfWork("landingPage", "PSD to HTML coding", "14 h.", "200$");
-                                            createListOfWork("landingPage", "Integration with CMS", "40 h.", "450$");
-                                        </script> -->
                                     </div>
                                 </div>
                             </div>
@@ -343,7 +208,7 @@
                 <div class="row">
                     <div class="col">
                         <div>
-                            <h2 class="turnkey-solutions">Online store</h2>
+                            <h2 class="turnkey-solutions">Онлайн магазин</h2>
                         </div>
                     </div>
                 </div>
@@ -351,22 +216,22 @@
                     <div class="col">
                         <div class="row">
                             <div class="col">
-                                <button class="accordion">Online store</button>
+                                <button class="accordion">Онлайн магазин</button>
                                 <div class="panel">
                                     <div class="row opened-cost-of-creating-sites">
                                         <div class="col-12 col-lg-6">
                                             <p class="opened-cost-of-creating-sites__caption">
-                                                ( 10 pages, 48 blocks)
+                                                ( 10 страниц, 48 блоков)
                                             </p>
                                         </div>
                                         <div class="col-12 col-lg-3">
                                             <p class="opened-cost-of-creating-sites__time">
-                                                from 41 working day
+                                                от 41 рабочих дней
                                             </p>
                                         </div>
                                         <div class="col-12 col-lg-3">
                                             <p class="opened-cost-of-creating-sites__price">
-                                                from $2850
+                                                от $2850
                                             </p>
                                         </div>
                                         <div class="col">
@@ -374,17 +239,46 @@
                                         </div>
                                     </div>
                                     <div id="onlineStore" class="row">
-                                        <!-- <script>
-                                            createListOfWork("onlineStore", "Type of work", "The terms", "Price");
-                                        </script>
-                                        <div class="col-12">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div>
+                            <h2 class="turnkey-solutions">Онлайн магазин</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <button class="accordion">Онлайн магазин</button>
+                                <div class="panel">
+                                    <div class="row opened-cost-of-creating-sites">
+                                        <div class="col-12 col-lg-6">
+                                            <p class="opened-cost-of-creating-sites__caption">
+                                                ( 10 страниц, 48 блоков)
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-lg-3">
+                                            <p class="opened-cost-of-creating-sites__time">
+                                                от 41 рабочих дней
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-lg-3">
+                                            <p class="opened-cost-of-creating-sites__price">
+                                                от $2850
+                                            </p>
+                                        </div>
+                                        <div class="col">
                                             <hr class="line">
                                         </div>
-                                        <script>
-                                            createListOfWork("onlineStore", "Design", "180 h.", "850$");
-                                            createListOfWork("onlineStore", "PSD to HTML coding", "140 h.", "500$");
-                                            createListOfWork("onlineStore", "Integration with CMS", "740 h.", "1550$");
-                                        </script> -->
+                                    </div>
+                                    <div id="somethingStore" class="row">
                                     </div>
                                 </div>
                             </div>
@@ -440,26 +334,32 @@
 </body>
 
 <script>
-    createOffers("Design", "10$ - 25$", "UI/UX, Web");
-    createOffers("FrontEnd", "18$ - 45$", "on React");
-    createOffers("BackEnd", "10$ - 25$", "PHP (Bitrix Framework / Laravel / Zend), Python (Django / Flask)");
-    createOffers("HTML/CSS", "10$ - 25$", "layout layouts for Bitrix, OpenCart, WordPress, ModX and individual solutions");
+    createOffers("Дизайн", "10$ - 25$", "UI/UX, Web");
+    createOffers("FrontEnd", "18$ - 35$", "React");
+    createOffers("BackEnd", "18$ - 35$", "PHP (Laravel), Python (Django / Flask) С# (ASP.net)");
+    createOffers("HTML/CSS", "10$ - 25$", "верстка макетов Bitrix, OpenCart, WordPress, ModX и индивидуальные решения");
 
-    createListOfWork("landingPage", "Type of work", "The terms", "Price");
+    createListOfWork("landingPage", "Тип работы", "Сроки", "Цена");
 
-    createListOfWork("landingPage", "Design", "14 h.", "200$");
-    createListOfWork("landingPage", "PSD to HTML coding", "14 h.", "200$");
-    createListOfWork("landingPage", "Integration with CMS", "40 h.", "450$");
+    createListOfWork("landingPage", "Дизайн", "14 ч.", "200$");
+    createListOfWork("landingPage", "Верстка", "14 ч.", "200$");
+    createListOfWork("landingPage", "Интеграция на CMS", "40 ч.", "450$");
 
-    createListOfWork("onlineStore", "Type of work", "The terms", "Price");
+    createListOfWork("onlineStore", "Тип работы", "Сроки", "Цена");
 
-    createListOfWork("onlineStore", "Design", "180 h.", "850$");
-    createListOfWork("onlineStore", "PSD to HTML coding", "140 h.", "500$");
-    createListOfWork("onlineStore", "Integration with CMS", "740 h.", "1550$");
+    createListOfWork("onlineStore", "Дизайн", "180 ч.", "850$");
+    createListOfWork("onlineStore", "Верстка", "140 ч.", "500$");
+    createListOfWork("onlineStore", "Интеграция на CMS", "740 ч.", "1550$");
+
+    createListOfWork("somethingStore", "Тип работы", "Сроки", "Цена");
+
+    createListOfWork("somethingStore", "Дизайн", "180 ч.", "850$");
+    createListOfWork("somethingStore", "Верстка", "140 ч.", "500$");
+    createListOfWork("somethingStore", "Интеграция с CMS", "740 ч.", "1550$");
 
     acardionMove();
-    openNav();
-    closeNav();
+    chooseLanguage();
+    checkLanguage();
 </script>
 
 <!-- Optional JavaScript -->

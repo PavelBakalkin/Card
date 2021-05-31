@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/header-footer.css">
     <link rel="stylesheet" href="css/chat.css">
 
-    <!-- <script src="js/code.js"></script> -->
+    <script src="js/code.js"></script>
     <title>ArtKDev</title>
 </head>
 
@@ -30,7 +30,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Feedback</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Связь с нами</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -38,12 +38,12 @@
                 <div class="modal-body">
                     <form action="#">
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Full name</label>
+                            <label for="exampleInputEmail1">Полное имя</label>
                             <input type="text" class="form-control" placeholder="enter your full name"
                                 id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Number</label>
+                            <label for="exampleInputPassword1">Телефон</label>
                             <input type="tel" class="form-control" required placeholder="enter your number"
                                 pattern="^\d[\d\(\)\-]{4,14}\d$" id="exampleInputPassword1">
                         </div>
@@ -54,12 +54,12 @@
                                 placeholder="enter your email" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Comment</label>
+                            <label for="exampleInputEmail1">Сообщение</label>
                             <input type="text" class="form-control" placeholder="comment up" id="exampleInputEmail1"
                                 aria-describedby="emailHelp">
                         </div>
-                        <button type="reset" class="btn btn-secondary">Reset</button>
-                        <button type="submit" class="btn btn-secondary">Send</button>
+                        <button type="reset" class="btn btn-secondary">Сброс</button>
+                        <button type="submit" class="btn btn-secondary">Отправить</button>
                     </form>
                 </div>
             </div>
@@ -80,13 +80,13 @@
                                         <a class="nav-link dropdown-toggle nav-link__header" href="#"
                                             id="navbarDropdown" role="button" data-toggle="dropdown"
                                             aria-haspopup="true" aria-expanded="false">
-                                            EN
+                                            RU
                                         </a>
-                                        <div class="dropdown-menu dropdown-menu-my drop-down-list"
+                                        <div id="language" class="dropdown-menu dropdown-menu-my drop-down-list"
                                             aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="#">RU</a>
-                                            <a class="dropdown-item" href="#">EN</a>
-                                            <a class="dropdown-item" href="#">HEB</a>
+                                            <a class="dropdown-item" href="index.html">RU</a>
+                                            <a class="dropdown-item" href="../en/index.html">EN</a>
+                                            <a class="dropdown-item" href="../heb/index.html">HEB</a>
                                         </div>
                                     </li>
                                 </ul>
@@ -96,13 +96,13 @@
                                     <div class="overlay-content">
                                         <ul>
                                             <li>
-                                                <a href="prices/prices.html">Services</a>
+                                                <a href="prices/prices.html">Службы</a>
                                             </li>
                                             <li>
-                                                <a href="index.html">Main page</a>
+                                                <a href="index.html">Главная</a>
                                             </li>
                                             <li>
-                                                <a href="about-us/about-us.html">About us</a>
+                                                <a href="about-us/about-us.html">О нас</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -122,13 +122,13 @@
                                 <div class="row description__row">
                                     <div class="col description__col">
                                         <h2 class="description__text">Web <span
-                                                class="description__changedtxt">development</span></h2>
+                                                class="description__changedtxt">разработка</span></h2>
                                     </div>
                                 </div>
                                 <div class="row description__row">
                                     <div class="col description__col text-center">
                                         <button onclick="goToPrices()"
-                                            class="btn btn-primary description__orderbtn">Order service</button>
+                                            class="btn btn-primary description__orderbtn">Сделать заказ</button>
                                     </div>
                                 </div>
                             </div>
@@ -144,10 +144,10 @@
                     <div class="col-xs-12 col-sm-6 col-lg-3">
                         <div class="row">
                             <div class="col">
-                                <p class="number">0+</p>
+                                <p class="number">2+</p>
                             </div>
                             <div class="col">
-                                <p class="achievements">yaers on the market</p>
+                                <p class="achievements">лет на рынке</p>
                             </div>
                         </div>
                     </div>
@@ -157,7 +157,7 @@
                                 <p class="number">4+</p>
                             </div>
                             <div class="col">
-                                <p class="achievements">specialists in 1 room</p>
+                                <p class="achievements">специалиста в комуналке</p>
                             </div>
                         </div>
                     </div>
@@ -167,7 +167,7 @@
                                 <p class="number">1000+</p>
                             </div>
                             <div class="col">
-                                <p class="achievements">completed projects</p>
+                                <p class="achievements">выполненных заказов</p>
                             </div>
                         </div>
                     </div>
@@ -177,7 +177,7 @@
                                 <p class="number">125+ </p>
                             </div>
                             <div class="col">
-                                <p class="achievements">satisfied customers</p>
+                                <p class="achievements">довольных клиентов</p>
                             </div>
                         </div>
                     </div>
@@ -186,9 +186,9 @@
                     <div class="col-sm-12 col-md-6 col-lg-4">
                         <div class="card cards">
                             <div class="card-body">
-                                <h5 class="card-title card-title">Outstaff</h5>
-                                <p class="card-text my-card-text">Expand your team with the help of our specialists.</p>
-                                <button href="#" data-toggle="modal" data-target="#exampleModal" class="btn card-button">Order</button>
+                                <h5 class="card-title card-title">Аутстаф</h5>
+                                <p class="card-text my-card-text">Расширьте свою команду с помощью наших специалистов.</p>
+                                <button href="#" data-toggle="modal" data-target="#exampleModal" class="btn card-button">Заказать</button>
                             </div>
                             <img src="images/144_f2.png" class="card-photo" alt="snorlax">
                         </div>
@@ -196,9 +196,9 @@
                     <div class="col-sm-12 col-md-6 col-lg-4">
                         <div class="card cards">
                             <div class="card-body">
-                                <h5 class="card-title card-title">Outsourcing</h5>
-                                <p class="card-text my-card-text">Realization management from your side.</p>
-                                <button href="#" data-toggle="modal" data-target="#exampleModal" class="btn card-button">Order</button>
+                                <h5 class="card-title card-title">Аутсорс</h5>
+                                <p class="card-text my-card-text">Менеджмент реализации с вашей стороны.</p>
+                                <button href="#" data-toggle="modal" data-target="#exampleModal" class="btn card-button">Заказать</button>
                             </div>
                             <img src="images/143.png" class="card-photo" alt="snorlax">
                         </div>
@@ -206,10 +206,10 @@
                     <div class="col-sm-12 col-md-12 col-lg-4">
                         <div class="card cards">
                             <div class="card-body">
-                                <h5 class="card-title card-title">Turnkey solution</h5>
-                                <p class="card-text my-card-text">Express your idea, follow the process - get the result
+                                <h5 class="card-title card-title">Решение "под ключ"</h5>
+                                <p class="card-text my-card-text">Изложите свою идею, наблюдайте за процессом, получите результат
                                 </p>
-                                <button href="#" data-toggle="modal" data-target="#exampleModal" class="btn card-button">Order</button>
+                                <button href="#" data-toggle="modal" data-target="#exampleModal" class="btn card-button">Заказать</button>
                             </div>
                             <img src="images/Venusaur.png" class="card-photo" alt="Venusaur">
                         </div>
@@ -219,7 +219,7 @@
                     <div class="row ">
                         <div class="col text-center">
                             <!-- <div> -->
-                            <h3 class="technologies-txt">We use</h3>
+                            <h3 class="technologies-txt">Мы используем</h3>
                             <!-- </div> -->
                         </div>
                     </div>
@@ -268,23 +268,23 @@
                     <div class="col-6">
                         <div class="row">
                             <div class="col-6 col-md-2 text-center">
-                                <a href="https://www.freepik.com"><img class="social-image" src="images/instagram.svg"
+                                <a href="https://www.instagram.com/"><img class="social-image" src="images/instagram.svg"
                                         alt="Instagram"></a>
                             </div>
                             <div class="col-6 col-md-2 text-center">
-                                <a href="https://www.freepik.com"><img class="social-image" src="images/telegram.svg"
+                                <a href="https://web.telegram.org/"><img class="social-image" src="images/telegram.svg"
                                         alt="Telegram"></a>
                             </div>
                             <div class="col-6 col-md-2 text-center">
-                                <a href="https://www.freepik.com"><img class="social-image" src="images/gmail.svg"
+                                <a href="https://www.google.com/intl/en/gmail/about/"><img class="social-image" src="images/gmail.svg"
                                         alt="Gmail"></a>
                             </div>
                             <div class="col-6 col-md-2 text-center">
-                                <a href="https://www.flaticon.com/authors/dave-gandy"><img class="social-image"
+                                <a href="https://www.facebook.com/"><img class="social-image"
                                         src="images/facebook.svg" alt="Facebook"></a>
                             </div>
                             <div class="col-12 col-md-2 text-center">
-                                <a href="https://www.flaticon.com/authors/pixel-perfect"><img class="social-image"
+                                <a href="https://github.com/"><img class="social-image"
                                         src="images/github-sign.svg" alt="Github"></a>
                             </div>
                         </div>
@@ -308,9 +308,9 @@
     </div>
 </body>
 
-<script src="js/code.js">
-    openNav();
-    closeNav();
+<script>
+    chooseLanguage();
+    checkLanguage();
 </script>
 
 <!-- Optional JavaScript -->
